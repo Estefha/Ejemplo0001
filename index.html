@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Registro de Usuarios</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <div id="content">
+            <form name="frm_usuarios" method="post" action="index.html">
+                <h1>Registro de Usuarios</h1>
+                <div id="linea">
+                    <label for="txt_documento">Documento:(*)</label>
+                    <input type="number" name="txt_documento" required="required" placeholder="Digite aqui su numero de documento">
+                </div>
+                <div id="linea">
+                    <label for="txt_apellidos">Apellidos:</label>
+                    <input type="text" name="txt_Apellidos" required="required" placeholder="Digite Su apellido">
+                </div>
+                <div id="linea">
+                    <label for="txt_nombres">Nombres:</label>
+                    <input type="text" name="txt_nombres" required="required" placeholder="Digite Su Nombre">
+                </div>
+                <div id="linea">
+                    <label for="txt_fenac">Fecha de nacimiento:</label>
+                    <input type="date" name="txt_fecnac" required="required" placeholder="Seleccione la fecha de nacimiento">
+                </div>
+                <div id="linea">
+                    <label for="txt_foto">Sargue su foto:</label>
+                    <input type="file" name="txt_foto" required="required" placeholder="Seleccione su foto">
+                </div>
+                <div id="linea">
+                    <label for="txt_ciudad">Seleccione La ciudad:</label>
+                    <select>
+                        <option value="0"></option>
+                        <option value="1">Ibague</option>
+                        <option value="2">Bogota</option>
+                        <option value="3">Cali</option>
+                        <option value="4">Medellin</option>
+                        <option value="5">Cucuta</option>
+                    </select>
+                </div>
+                <div id="linea" style="height: 63px;">
+                    <label for="text_descripcion">Descripcion:</label>
+                    <textarea name="text_descripcion" required="required" rows="3" cols="40" placeholder="Digite aqui su descripcion">
+                    </textarea>
+                </div>
+                <div id="linea">
+                    <label for="text_email">Correo Electronico:</label>
+                    <input type="email" name="txt_email" required="required" placeholder="Digite su correo">
+                </div>
+                <div id="linea">
+                    <input type="submit" name="btn_guardar" value="Guardar Datos">
+                    
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
